@@ -15,17 +15,17 @@
   </head>
 
   <body>
-    <nav class="nav main__nav" aria-label="Primary Navigation">
-      <img class="nav__logo" src="./images/slack-logo.png" alt="slack_logo" />
+    <nav class="nav main_nav" aria-label="Primary Navigation">
+      <img class="main_nav__logo" src="./images/slack-logo.png" alt="slack_logo" />
       <div id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <div class="hamburger_menu">
-        <div class="logo__wrapper">
-          <img class="nav__logo" src="./images/slack-logo.png" alt="slack_logo" />
-          <span id="close__hamburger_menu">X</span>
+        <div class="logo_wrapper">
+          <img class="main_nav__logo" src="./images/slack-logo.png" alt="slack_logo" />
+          <span id="close_hamburger_menu">X</span>
         </div>
         <nav class="nav__list">
           <a class="nav__link" href="#">Why Slack?</a>
@@ -36,95 +36,104 @@
       </div>
     </nav>
     <header class="header">
-      <h1>Where Work Happens</h1>
-      <p>
-        When your team needs to kick off a project, hire a new employee, deploy
-        some code, review a sales contract, finalize next year's budget, measure
-        an A/B test, plan your next office opening, and more, Slack has you
-        covered.
-      </p>
-      <form action="submit" name="sign" class="sign_up submit__form">
-        <input type="text" class="sign_up__input" placeholder="Email address">
-        <button name="button" class="sign_up__button">GET STARTED</button>
-      </form>
-      <p class="sign_in">Already using Slack? <a href="#">Sign in</a>.</p>
+      <div id="header_wrapper">
+        <h1>Where Work Happens</h1>
+        <p>
+          When your team needs to kick off a project, hire a new employee, deploy
+          some code, review a sales contract, finalize next year's budget, measure
+          an A/B test, plan your next office opening, and more, Slack has you
+          covered.
+        </p>
+        <form action="submit" name="sign" class="sign_up sign_up__form">
+          <input type="text" class="sign_up__input" placeholder="Email address">
+          <button name="button" class="sign_up__button">GET STARTED</button>
+        </form>
+        <p class="sign_in">Already using Slack? <a href="#">Sign in</a>.</p>
+      </div>
       <img src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
       <section class="social_proof">
-        <h2>You're in good company</h2>
-        <p>
-          Millions of people around the world have already made Slack the place
-          where their work happens.
-        </p>
+        <h2> You're in good company</h2>
+        <p>Millions of people around the world have already made Slack the place where their work happens.</p>
         <button name="button" type="button" class="social_proof__button">DISCOVER WHY</button>
-        <img class="social_proof_img" src="./images/airbnb-logo.png" alt="" />
-        <img class="social_proof_img" src="./images/capital-one-logo.png" alt="" />
-        <img class="social_proof_img" src="./images/harvard-logo.png" alt="" />
-        <img class="social_proof_img" src="./images/los-angeles-times-logo.png" alt="" />
-        <img class="social_proof_img" src="./images/oracle-logo.png" alt="" />
-        <img class="social_proof_img" src="./images/ticketmaster-logo.png" alt="" />
+        <section class="social_proof__images">
+          <img class="social_proof__img" src="./images/airbnb-logo.png" alt="" />
+          <img class="social_proof__img" src="./images/capital-one-logo.png" alt="" />
+          <img class="social_proof__img" src="./images/harvard-logo.png" alt="" />
+          <img class="social_proof__img" src="./images/los-angeles-times-logo.png" alt="" />
+          <img class="social_proof__img" src="./images/oracle-logo.png" alt="" />
+          <img class="social_proof__img" src="./images/ticketmaster-logo.png" alt="" />
+        </section>  
       </section>
       <section class="cta">
-        <h3 class="cta__h3">Try it for free</h3>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <form action="submit" name="cta" class="sign_up cta__form">
-          <input type="text" class="sign_up__input" placeholder="Email address">
-          <button name="button" class="sign_up__button">GET STARTED</button>
-        </form>
+        <div class="cta_text__wrapper">
+          <h3 class="cta__h3">Try it for free</h3>
+          <p>Already using Slack? <a href="">Sign in</a></p>
+        </div>
+        <div class="cta_form__wrapper">
+          <form action="submit" name="cta" class="sign_up cta__form">
+            <input type="text" class="sign_up__input" placeholder="Email address">
+            <button name="button" class="sign_up__button">GET STARTED</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <img class="footer__img" src="./images/iso-slack.png" alt="" />
-      <section class="footer">
-        <div class="footer__items">
-          <h3 class="footer__h3"><a href="#">COMPANY</a></h3>
-          <a class="footer__item" href="#">About Us</a>
-          <a class="footer__item" href="#">Careers</a>
-          <a class="footer__item" href="#">Blog</a>
-          <a class="footer__item" href="#">Press</a>
-          <a class="footer__item" href="#">Brand Guidelines</a>
-        </div>
-        <div class="footer__items">
-          <h3 class="footer__h3"><a href="#">PRODUCT</a></h3>
-          <a class="footer__item" href="#">Why Slack?</a>
-          <a class="footer__item" href="#">Enterprise</a>
-          <a class="footer__item" href="#">Customer Stories</a>
-          <a class="footer__item" href="#">Pricing</a>
-          <a class="footer__item" href="#">Security</a>
-        </div>
-        <div class="footer__items">
-          <h3 class="footer__h3"><a href="#">RESOURCES</a></h3>
-          <a class="footer__item" href="#">Download</>
-          <a class="footer__item" href="#">Help Center</a>
-          <a class="footer__item" href="#">Guides</a>
-          <a class="footer__item" href="#">Events</a>
-          <a class="footer__item" href="#">App Directory</a>
-          <a class="footer__item" href="#">API</a>
-        </div>
-        <div class="footer__items">
-          <h3 class="footer__h3"><a href="#">EXTRAS</a></h3>
-          <a class="footer__item" href="#">Podcast</a>
-          <a class="footer__item" href="#">Slack Shop</a>
-          <a class="footer__item" href="#">Slack at Work</a>
-          <a class="footer__item" href="#">Slack Fund</a>
-        </div>
-      </section>
-      <section class="footer_footer">
-        <div class="footer__essentials">
-          <a class="footer__link" href="#">Status</a>
-          <a class="footer__link" href="#">Privacy & Terms</a>
-          <a class="footer__link" href="#">Contact Us</a>
-        </div>
-        <div class="language">
-          <img class="language__img" src="./images/us-flag.png" alt="" />
-          <span class="language_choice">English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="footer__social">
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
+      <div class="main_footer_wrapper">
+        <img class="footer_logo" src="./images/iso-slack.png" alt="" />
+        <section class="main_footer">
+          <div class="footer__items">
+            <h3 class="footer__h3"><a href="#">COMPANY</a></h3>
+            <a class="footer__item" href="#">About Us</a>
+            <a class="footer__item" href="#">Careers</a>
+            <a class="footer__item" href="#">Blog</a>
+            <a class="footer__item" href="#">Press</a>
+            <a class="footer__item" href="#">Brand Guidelines</a>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__h3"><a href="#">PRODUCT</a></h3>
+            <a class="footer__item" href="#">Why Slack?</a>
+            <a class="footer__item" href="#">Enterprise</a>
+            <a class="footer__item" href="#">Customer Stories</a>
+            <a class="footer__item" href="#">Pricing</a>
+            <a class="footer__item" href="#">Security</a>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__h3"><a href="#">RESOURCES</a></h3>
+            <a class="footer__item" href="#">Download</>
+            <a class="footer__item" href="#">Help Center</a>
+            <a class="footer__item" href="#">Guides</a>
+            <a class="footer__item" href="#">Events</a>
+            <a class="footer__item" href="#">App Directory</a>
+            <a class="footer__item" href="#">API</a>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__h3"><a href="#">EXTRAS</a></h3>
+            <a class="footer__item" href="#">Podcast</a>
+            <a class="footer__item" href="#">Slack Shop</a>
+            <a class="footer__item" href="#">Slack at Work</a>
+            <a class="footer__item" href="#">Slack Fund</a>
+          </div>
+        </section>
+      </div>
+      <section class="sub_footer">
+        <section class="sub_footer__essentials">
+          <a class="sub_footer__link" href="#">Status</a>
+          <a class="sub_footer__link" href="#">Privacy & Terms</a>
+          <a class="sub_footer__link" href="#">Contact Us</a>
+        </section>
+        <div id="sub_footer_wrapper">
+          <section class="language">
+            <img class="language__img" src="./images/us-flag.png" alt="" />
+            <span class="language__choice">English (US)</span>
+            <i class="fas fa-chevron-down"></i>
+          </section>
+          <section class="sub_footer__social">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+          </section>
         </div>
       </section>
     </footer>
