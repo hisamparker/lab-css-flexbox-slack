@@ -29,13 +29,13 @@ body {
     top: 0;
     max-height: 100px;
     margin: 0 auto;
-    padding-left: 1.5em;
-    padding-right: 1em;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
     border-bottom: 1px #F4F3F4 solid;
 }
 
 .main_nav__logo {
-    margin: .5em 0 .5em;
+    margin: .5rem 0 .5rem;
     max-width: 125px;
     min-width: 100px
 }
@@ -47,7 +47,7 @@ body {
     align-items: center;
     width: 18px;
     height: 30px;
-    margin-right: 1em;
+    margin-right: 1rem;
     cursor: pointer;
 }
 
@@ -67,9 +67,9 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     transition: left .75s ease-in;
 }
 .is__open {
@@ -92,7 +92,7 @@ body {
 }
 
 .nav__list {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -106,22 +106,26 @@ body {
     font-weight: bold;
     color: #1d1d1d;
     text-decoration: none;
-    margin: .5em 0;
-    padding: .5em 0 .5em;
+    margin: .5rem 0;
+    padding: .5rem 0 .5rem;
 
 }
 
 .header {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     color: #5b5e6d;
     text-align: left;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-size: 1.25rem;
     font-weight: lighter;
     line-height: 2rem;
+}
+
+#header__wrapper {
+    padding-right: 1rem;
 }
 
 h1 {
@@ -144,7 +148,7 @@ h1 {
     padding: 1rem;
     border-radius: 5px;
     border: 1px #F4F3F4 solid;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .sign_up__button {
@@ -161,12 +165,12 @@ h1 {
 }
 
 .social_proof {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     color: #5b5e6d;
     text-align: left;
-    padding: 1em 2em 3em;
+    padding: 1rem 2rem 3rem;
     font-size: 1.25rem;
     font-weight: lighter;
     line-height: 2rem;
@@ -185,7 +189,7 @@ h2 {
     font-size: 1rem;
     font-weight: bold;
     padding: 1rem;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     color: #192592;
     background-color: white;
     border: 1px #192592 solid;
@@ -197,7 +201,7 @@ h2 {
     flex-direction: column;
     color: #5b5e6d;
     text-align: left;
-    padding: 1em 2em 3em;
+    padding: 1rem 2rem 3rem;
     font-size: 1.25rem;
     font-weight: lighter;
     line-height: 2rem;
@@ -207,7 +211,7 @@ h2 {
 
 .social_proof__img {
     border-bottom: .25px #e4e2e4 solid;
-    padding: 2em 4em;
+    padding: 2rem 4rem;
 }
 
 .social_proof__img:last-of-type {
@@ -215,14 +219,14 @@ h2 {
 }
 
 .cta {
-    margin-top: 2em;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     color: #2C303F;
     text-align: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.25rem;
     font-weight: lighter;
     line-height: 2rem;
@@ -230,8 +234,9 @@ h2 {
 }
 
 .cta__h3 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
+
 
 .footer_logo {
     width: 150px;
@@ -242,8 +247,8 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -254,14 +259,14 @@ h2 {
     flex-direction: column;
     align-content: space-around;
     text-decoration: none;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .footer__item {
     text-decoration: none;
     color: #5b5e6d;
-    padding-top: 1em;
-    padding-right: 3em;
+    padding-top: 1rem;
+    padding-right: 3rem;
     font-size: 1.1rem;
     font-weight: lighter;
     cursor: pointer;
@@ -274,7 +279,8 @@ h2 {
 }
 
 .sub_footer {
-    padding-top: 1em;
+    padding-top: 1rem;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -463,5 +469,89 @@ h2 {
         margin-top: 4rem;
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #close_hamburger_menu {
+        display: none;
+    }
+
+    .hamburger_menu {
+        position: static;
+        min-height: auto;
+        width: auto;
+        padding-bottom: 0;
+    }
+
+    .main_nav {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .logo__full_width {
+        display: none;
+    }
+
+    .logo__wrapper {
+        padding-top: .5rem;
+        max-width: 125px;
+    }
+
+    .main_nav__logo {
+        width: 100%;
+        padding-right: .5rem;
+    }
+
+    .nav__list {
+        flex-direction: row;
+    }
+
+    .nav__link {
+        width: auto;
+    }
+
+    .nav__link {
+        padding: .5rem;
+        margin: .5rem;
+        font-size: 1.25rem;
+        font-weight: lighter;
+    }
+
+    .nav__link:last-of-type {
+        border: .25px #1d1d1d solid;
+        border-radius: 5px;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+
+    .header_img__wrapper {
+        max-width: 40%;
+        padding-top: 2rem;
+    }
+
+    #header__wrapper {
+        max-width: 50%;
+        padding-left: 2rem;
+        line-height: 1rem;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+        line-height: 5.25rem;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .sign_up__input {
+        display: none;
     }
 }
